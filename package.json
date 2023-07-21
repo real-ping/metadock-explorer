@@ -1,0 +1,18 @@
+{
+  "name": "metadock-explorer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "dev": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "build": {
+    "appId": "your.id",
+    "win": {}
+  }
+}

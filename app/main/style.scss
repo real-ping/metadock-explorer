@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.app {
+    background-color: #27272b;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.frame {
+    width: 100vw;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+
+
+    &>.up {
+
+        background-color: rgba(255, 255, 255, 0.15);
+        color: white;
+        width: fit-content;
+        padding: 5px 8px;
+        user-select: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+
+
+    &>.disabled {
+
+        background-color: rgba(255, 255, 255, 0.15);
+        color: rgb(165, 165, 165);
+        width: fit-content;
+        padding: 5px 8px;
+        user-select: none;
+        cursor: not-allowed;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    &>.pathInput {
+
+        background-color: rgba(255, 255, 255, 0.15);
+        width: 75vw;
+        padding: 5px 5px;
+        user-select: none;
+        cursor: pointer;
+
+        &>input {
+            width: 100%;
+            outline: 0;
+            background-color: #292929;
+            color: white;
+        }
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    &>.close {
+        background-color: rgba(255, 255, 255, 0.15);
+        color: rgb(218, 0, 0);
+        width: 48px;
+        line-height: 30px;
+        text-align: center;
+        user-select: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    &>.cmd {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.15);
+        color: white;
+        width: 48px;
+        padding: 5px 5px;
+        user-select: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+}
+
+.explorer {
+    -webkit-app-region: drag;
+    width: 100vw;
+    height: calc(100vh - 30px);
+    max-height: calc(100vh - 30px);
+    display: flex;
+    flex-direction: column; 
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &>.directoryInfo {
+        display: block;
+        -webkit-app-region: no-drag;
+        color: whitesmoke;
+        margin: 5px;
+    }
+
+    &>.file {
+        -webkit-app-region: no-drag;
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(255, 255, 255, 0.15);
+        height: 32px;
+        padding: 5px;
+        color: rgb(165, 165, 165);
+
+        &>.filename {
+            cursor: pointer;
+            line-height: 32px;
+            margin-left: 10px;
+            max-width: 90%;
+            width: 90%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            &:hover {
+                text-decoration: underline;
+                color: white;
+            }
+        }
+
+
+        &>.show {
+            margin-left: 10px;
+            padding: 0 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+}

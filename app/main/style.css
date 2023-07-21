@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.app {
+  background-color: #27272b;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.frame {
+  width: 100vw;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.frame > .up {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 8px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.frame > .up:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.frame > .disabled {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: rgb(165, 165, 165);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 8px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: not-allowed;
+}
+.frame > .disabled:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.frame > .pathInput {
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 75vw;
+  padding: 5px 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.frame > .pathInput > input {
+  width: 100%;
+  outline: 0;
+  background-color: #292929;
+  color: white;
+}
+.frame > .pathInput:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.frame > .close {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: rgb(218, 0, 0);
+  width: 48px;
+  line-height: 30px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.frame > .close:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.frame > .cmd {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  width: 48px;
+  padding: 5px 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.frame > .cmd:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.explorer {
+  -webkit-app-region: drag;
+  width: 100vw;
+  height: calc(100vh - 30px);
+  max-height: calc(100vh - 30px);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.explorer > .directoryInfo {
+  display: block;
+  -webkit-app-region: no-drag;
+  color: whitesmoke;
+  margin: 5px;
+}
+.explorer > .file {
+  -webkit-app-region: no-drag;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.15);
+  height: 32px;
+  padding: 5px;
+  color: rgb(165, 165, 165);
+}
+.explorer > .file > .filename {
+  cursor: pointer;
+  line-height: 32px;
+  margin-left: 10px;
+  max-width: 90%;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.explorer > .file > .filename:hover {
+  text-decoration: underline;
+  color: white;
+}
+.explorer > .file > .show {
+  margin-left: 10px;
+  padding: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.explorer > .file > .show:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}/*# sourceMappingURL=style.css.map */
