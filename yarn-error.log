@@ -1,0 +1,55 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\maxta\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js dist
+
+PATH: 
+  C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\ffmpeg\bin;C:\Users\maxta\AppData\Local\Microsoft\WindowsApps;C:\Users\maxta\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\Users\maxta\AppData\Roaming\npm;C:\Users\maxta\.dotnet\tools;C:\Users\maxta\AppData\Local\GitHubDesktop\bin;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\maxta\Documents\GitHub\metadock-explorer\package.json: Unexpected token } in JSON at position 455
+      at JSON.parse (<anonymous>)
+      at C:\Users\maxta\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\maxta\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\maxta\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "metadock-explorer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "pack": "electron-builder --dir",
+      "dist": "electron-builder",
+      "dev": "electron ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "build": {
+      "appId": "your.id",
+      "win": {}
+    },
+    "dependencies": {
+      "electron-builder": "^24.4.0",
+      "open": "^8.4.2"
+    },
+    "devDependencies": {
+      "electron": "^25.3.1",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

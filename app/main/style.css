@@ -110,7 +110,7 @@ body {
 }
 .explorer > .directoryInfo {
   display: block;
-  -webkit-app-region: no-drag;
+  -webkit-app-region: drag;
   color: whitesmoke;
   margin: 5px;
 }

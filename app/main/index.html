@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
             <div class="pathInput">
                 <input type="text" placeholder="file path" id="pathInputEl">
             </div>
-            <div class="cmd">
+            <div class="cmd" id="cmd">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-terminal" viewBox="0 0 16 16">
                     <path
@@ -28,7 +28,7 @@
                         d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z" />
                 </svg>
             </div>
-            <div class="close">✕</div>
+            <div class="close" id="closeEl">✕</div>
         </div>
         <div class="explorer" id="explorer">
             <div class="directoryInfo" id="directoryInfo">0 files | 0 folders</div>
